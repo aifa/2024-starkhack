@@ -11,7 +11,7 @@ export default function ProjectPage() {
 
   const handleProjectCreated = (id: string) => {
     setProjectId(id);
-    setStep('add-story');
+    setStep('overview');
   };
 
   const handleAddStory = () => {
