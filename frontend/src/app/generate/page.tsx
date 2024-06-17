@@ -2,7 +2,7 @@
 // pages/project.js
 import { useState } from 'react';
 import NewProjectForm from '../../components/NewProjectForm';
-import ProjectOverview from '../../components/ProjectOverview';
+import ProjectOverviewGenerate from '../../components/ProjectOverviewGenerate';
 import AddUserStory from '../../components/AddUserStory';
 
 export default function ProjectPage() {
@@ -23,7 +23,7 @@ export default function ProjectPage() {
       case 'new-project':
         return <NewProjectForm onProjectCreated={handleProjectCreated} />;
       case 'overview':
-        return <ProjectOverview projectId={projectId} onAddStory={handleAddStory} />;
+        return <ProjectOverviewGenerate projectId={projectId} onAddStory={handleAddStory} />;
       case 'add-story':
         return <AddUserStory projectId={projectId} onStoryAdded={() => setStep('overview')} />;
       default:
