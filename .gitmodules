@@ -2,3 +2,6 @@
 	path = packages/snfoundry/local-devnet
 	url = https://github.com/0xSpaceShard/starknet-devnet-rs
 	branch = json-rpc-v0.5.1
+[submodule "2024-starkhack-ai"]
+	path = 2024-starkhack-ai
+	url = https://github.com/aifa/2024-starkhack-ai
